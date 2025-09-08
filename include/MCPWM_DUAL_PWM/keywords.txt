@@ -1,0 +1,29 @@
+#######################################
+# Syntax Coloring Map For MCPWM_DUAL_PWM
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MCPWM_DUAL_PWM		KEYWORD2
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+initPWM KEYWORD2
+setDutyCycle KEYWORD2
+setDeadTime KEYWORD2
+getResolution KEYWORD2
+
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+cmprA LITERAL1
+cmprB LITERAL1
