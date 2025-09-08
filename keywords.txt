@@ -1,0 +1,35 @@
+#######################################
+# Syntax Coloring Map For encoderEncoderPCNT
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+encoderEncoderPCNT		KEYWORD2
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init KEYWORD2
+deinit KEYWORD2
+position KEYWORD2
+setPosition KEYWORD2
+zero KEYWORD2
+getCount KEYWORD2
+getCountA KEYWORD2
+getCountB KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+pin_a LITERAL1
+pin_b LITERAL1
+pulsePinA LITERAL1
+pulsePinB LITERAL1
+glitch_time LITERAL1
