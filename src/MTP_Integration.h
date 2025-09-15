@@ -30,3 +30,8 @@ template <size_t N>
 mtp::DeadlineScheduler<N>& scheduler();
 
 } // namespace MTP
+
+//
+// Pause/resume the PID FreeRTOS task (safe no-ops if not started)
+void suspend_pid_task();
+void resume_pid_task();

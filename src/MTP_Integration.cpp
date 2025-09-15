@@ -119,3 +119,21 @@ template mtp::DeadlineScheduler<8>&  scheduler<8>();
 template mtp::DeadlineScheduler<16>& scheduler<16>();
 
 } // namespace MTP
+
+void suspend_pid_task()
+{
+    extern TaskHandle_t g_pidTaskHandle;
+    if (g_pidTaskHandle)
+    {
+        vTaskSuspend(g_pidTaskHandle);
+    }
+}
+
+void resume_pid_task()
+{
+    extern TaskHandle_t g_pidTaskHandle;
+    if (g_pidTaskHandle)
+    {
+        vTaskResume(g_pidTaskHandle);
+    }
+}
