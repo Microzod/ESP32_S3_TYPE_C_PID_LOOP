@@ -79,11 +79,9 @@ static void compute_avg_array(const float* up, const float* down, float* out, in
 
 static int get_max_duty()
 {
-    extern int pwm_number_of_bits;
-    int bits = pwm_number_of_bits;
-    if (bits < 1) bits = 1;
-    if (bits > 15) bits = 15;
-    return (1 << bits) - 1;
+    int res = (int)l298n.pwm.getResolution();
+    if (res <= 0) res = 1024;
+    return res - 1;
 }
 
 // Concrete motor adapters A/B (using your l298n + encoder objects)
